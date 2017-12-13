@@ -1,0 +1,36 @@
+git init 初始化
+git add filename 添加到暂存区
+git commit -m "描述" 提交到仓库
+git status 查看工作区状态
+git diff 查看工作区上次修改了那些文件
+git lg 查看所有提交的版信息
+git reset --hard HEAD^ 回退到上一个版本
+git reset --hard commit_id H回退到指定版本
+git checkout -- filename 可以撤销工作区的修改
+git reset HEAD filename 可以撤销暂存区的修改
+git rm 删除版本里的文件
+git branch 查看分支
+git branch name 创建分支
+git checkout name 切换分支
+git checkout -b 创建并切换分支
+git merge name 合并某分支到当前分支
+git branch -d name 删除分
+git status 查看需要解决冲突的文件
+git merge --no-ff -m "描述" branch_name 合并分支并记录合并信息
+git stash 储藏还没提交的工作区方便切换继续工作
+git stash list 查看储藏的工作现场列表
+git stash stash pop/apply+drop 恢复现场并且删除stash内容
+git branch -D name 强行删除一个没有合并的分支
+git remote -v 查看远程库信息
+git clone git地址
+git tag v1.0 为当前最新commit打上标签
+git tag 查看标签信息
+git tag v1.0 commit_id 为指定commit版本打上tag
+git tag -a v1.0 -m "描述tag版本" commit id
+git tag -d v1.o 删除标签
+git push origin v1.0 推送标签到远程
+git push origin --tags 将本地所有标签推送到远程
+git tag -d v1.0先删除本地，git push origin :refs/tags/v1.0再删除远程
+https://github.com/github/gitignore 忽略文件.gitignore
+git config --global alias.co checkout git命令别名修改
+用户目录下的.gitconfig中可以修改git命令
